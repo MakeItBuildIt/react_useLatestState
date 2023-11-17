@@ -37,6 +37,7 @@ export const useLatestState = function<T>(initialValue: T): [GetStateType<T>, Se
     // state value.
     if (typeof value === "function") {
       const updatedValue: T = (value as Function)(valueRef.current);
+      valueRef.current = updatedValue;
       setValue(updatedValue);
 
       return;
@@ -45,6 +46,7 @@ export const useLatestState = function<T>(initialValue: T): [GetStateType<T>, Se
     // If the `value` is supplied
     // directly, simply update the state
     // and store the value in the reference.
+    valueRef.current = value;
     setValue(value);
   }
 
