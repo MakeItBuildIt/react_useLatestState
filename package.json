@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
