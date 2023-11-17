@@ -2,7 +2,7 @@
   "name": "react_uselateststate",
   "version": "1.0.0",
   "description": "A lightweight React package that enhances the reliability of state values within functional components. By utilizing useRef under the hood, useLatestState ensures that you always access the latest state value, eliminating common pitfalls when working with state inside functions. Simplify your React development with this straightforward solution.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,5 +33,11 @@
   "bugs": {
     "url": "https://github.com/MakeItBuildIt/react_useLatestState/issues"
   },
-  "homepage": "https://github.com/MakeItBuildIt/react_useLatestState#readme"
+  "homepage": "https://github.com/MakeItBuildIt/react_useLatestState#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  }
 }
