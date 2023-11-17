@@ -1,10 +1,15 @@
 {
-  "name": "react_uselateststate",
+  "name": "react-use-latest-state",
   "version": "1.0.0",
   "description": "A lightweight React package that enhances the reliability of state values within functional components. By utilizing useRef under the hood, useLatestState ensures that you always access the latest state value, eliminating common pitfalls when working with state inside functions. Simplify your React development with this straightforward solution.",
-  "main": "src/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "repository": {
     "type": "git",
