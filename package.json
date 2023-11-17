@@ -1,6 +1,6 @@
 {
   "name": "react-use-latest-state",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight React package that enhances the reliability of state values within functional components. By utilizing useRef under the hood, useLatestState ensures that you always access the latest state value, eliminating common pitfalls when working with state inside functions. Simplify your React development with this straightforward solution.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
