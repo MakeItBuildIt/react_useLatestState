@@ -2,6 +2,8 @@
 
 <div align="center"><img src="https://i.ibb.co/JQ2S7HY/Use-latest-state.png" alt="useLatestState(⚡️)" /></div>
 
+![npm](https://img.shields.io/npm/dm/react-use-latest-state?style=for-the-badge&logo=npm&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Freact-use-latest-state)
+
 ## Overview
 
 `useLatestState` is a lightweight React package that enhances the reliability of state values within functional components. It addresses the common issue where accessing state values inside functions might yield outdated results. By leveraging `useRef` under the hood, this package ensures that you always get the latest state value.
